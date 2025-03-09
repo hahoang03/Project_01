@@ -1,12 +1,109 @@
 * {
     box-sizing: border-box;
+    /* làm cho width và height của một phần tử bao gồm cả padding và border, */
+    /*  width: 200px;  
+    padding: 20px;  
+    border: 5px solid black;   */
+    /* box1 (không có box-sizing: border-box;): Chiều rộng thực tế của box1 sẽ là 200px + 20px (padding trái) + 20px (padding phải) + 5px (border trái) + 5px (border phải) = 250px.
+    box2 (có box-sizing: border-box;): Chiều rộng thực tế của box2 sẽ là 200px. padding và border sẽ được tính vào bên trong kích thước 200px đó, làm cho nội dung bên trong nhỏ lại. */
+}
+
+:root {
+    /* Dat bien */
+    --primary-color: #0f1b4c;
 }
 
 html {
     font-size: 62.5%;
+    /* Tại sao lại là 62.5%?
+    Kích thước phông chữ mặc định của trình duyệt thường là 16px. Khi bạn đặt font-size của phần tử html thành 62.5%, bạn đang làm cho kích thước phông chữ cơ sở trở thành 10px (62.5% của 16px là 10px).
+    Sử dụng rem dễ dàng hơn: Đơn vị rem (root em) tương ứng với kích thước phông chữ của phần tử gốc (phần tử html). Khi bạn đã đặt kích thước phông chữ gốc thành 10px, bạn có thể dễ dàng tính toán kích thước phông chữ bằng rem. Ví dụ:
+    1rem = 10px */
 }
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins";
+    /* sans-serif la font du phong */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common - dung chung o nhieu noi nen khong fix cung, khong xai margin auto vi se lam co top voi bot nua*/
+a {
+    /* Toan bo the a khong gach chan  */
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    /* Neu man hinh nho hon 1110 thi se an cai maxwidth 100% va moi ben trai phai can le 24  */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    /* the a la the inline */
+    display: inline-block;
+    padding: 18px 16px;
+    /* padding tren duoi trai phai  */
+    border-radius: 8px;
+    background: var(--primary-color);
+    min-width: 98px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    /* hieu ung */
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    background: #e6f0ff;
+    height: 100vh;
+}
+
+.navbar {
+    /* nam ngang thi su dung flex, chinh cho nam giua theo chieu doc */
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    /* neu su dung margin thi se day nguyen cai mau nen luon */
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar .actions {
+    /* day le ben trai qua cho het khoang trong, the se nam o le phai */
+    margin-left: auto;
+}
+
+.navbar ul a {
+    color: #4f5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* dung padding de tang vung bam nut, khong dung margin */
+    /* display inline block se va cham voi cac thanh phan xung quanh */
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .actions .action-link {
+    background: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
 }

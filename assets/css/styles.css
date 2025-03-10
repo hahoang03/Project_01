@@ -70,7 +70,7 @@ a {
     /* nam ngang thi su dung flex, chinh cho nam giua theo chieu doc */
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 48px;
     /* neu su dung margin thi se day nguyen cai mau nen luon */
 }
 
@@ -107,3 +107,24 @@ a {
     padding: 13px 16px;
     margin-left: 18px;
 }
+
+.hero {
+    margin-top: 13rem;
+}
+
+.hero .sub-title {
+    color: #687e90;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.018rem;
+}
+
+.hero .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.19; /* 118.75% */
+}
+

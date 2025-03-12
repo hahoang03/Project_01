@@ -10,7 +10,7 @@
 
 :root {
     /* Dat bien */
-    --primary-color: #0f1b4c;
+    --primary-color: #0F1B4C;
 }
 
 html {
@@ -60,8 +60,9 @@ a {
     opacity: 0.9;
 }
 
-/* Header */
+/* ==================== Header ==================== */
 .header {
+    position: relative;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -98,7 +99,7 @@ a {
 }
 
 .navbar .actions .action-link {
-    background: var(--primary-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -143,4 +144,11 @@ a {
 .hero-cta {
     min-width: 17rem;
     margin-top: 4rem;
+}
+
+.hero-img {
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px); 
+    /* Tinh toan dua tren ti le, su dung can nut butoon voi cai chan nha */
+    bottom: 0;
 }

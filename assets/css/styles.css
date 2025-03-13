@@ -10,7 +10,7 @@
 
 :root {
     /* Dat bien */
-    --primary-color: #0F1B4C;
+    --primary-color: #0f1b4c;
 }
 
 html {
@@ -148,7 +148,36 @@ a {
 
 .hero-img {
     position: absolute;
-    right: calc((100vw - 1110px) / 2 - 100px); 
+    right: calc((100vw - 1110px) / 2 - 100px);
     /* Tinh toan dua tren ti le, su dung can nut butoon voi cai chan nha */
     bottom: 0;
+}
+
+/* =========== Clients =============== */
+.clients {
+    margin-top: 12.2rem;
+}
+
+.clients .row {
+    display: flex; /* dan ngang */
+    justify-content: space-between; /* dan deu ra 2 ben */
+}
+
+.clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .row-desc {
+    margin-top: 2.3rem;
+}
+
+.clients .images {
+    margin-top: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Can giua truc ngang */
+    
 }

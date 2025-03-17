@@ -268,6 +268,10 @@ a {
 }
 
 /* ========== FEATURED ========= */
+.features {
+    height: 727px;
+    background: #f5fafe;
+}
 .featured_properties {
     margin-top: 27rem;
     width: 1110px;
@@ -301,4 +305,44 @@ a {
     font-size: 1.8rem;
     line-height: 1;
     color: #0689ff;
+}
+
+.featuresimage {
+    margin-top: 68px;
+}
+
+.nikko {
+    width: 350px;
+    height: 357px;
+    background: #ffffff;
+}
+
+.nikko .text1 {
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #000339;
+}
+
+.nikko .text2 {
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #a3a6ab;
+}
+
+.symbol .text {
+    color: #4d4d52;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.symbol {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Can giua truc ngang */
 }

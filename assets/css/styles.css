@@ -269,11 +269,12 @@ a {
 
 /* ========== FEATURED ========= */
 .features {
+    margin-top: 120px;
     height: 727px;
     background: #f5fafe;
 }
 .featured_properties {
-    margin-top: 27rem;
+    padding-top: 120px;
     width: 1110px;
     max-width: calc(100% - 48px);
     /* Neu man hinh nho hon 1110 thi se an cai maxwidth 100% va moi ben trai phai can le 24  */
@@ -307,14 +308,31 @@ a {
     color: #0689ff;
 }
 
-.featuresimage {
+
+.featuresimage{
     margin-top: 68px;
+    width: 1440px;
+    max-width: calc(100% - 48px);
+    /* Neu man hinh nho hon 1110 thi se an cai maxwidth 100% va moi ben trai phai can le 24  */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+.listfeature {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    
+}
 .nikko {
     width: 350px;
     height: 357px;
     background: #ffffff;
+
 }
 
 .nikko .text1 {
@@ -323,6 +341,7 @@ a {
     font-size: 20px;
     line-height: 1;
     color: #000339;
+    margin-left: 20px;
 }
 
 .nikko .text2 {
@@ -331,6 +350,7 @@ a {
     font-size: 14px;
     line-height: 100%;
     color: #a3a6ab;
+    margin-left: 20px;
 }
 
 .symbol .text {
@@ -343,6 +363,8 @@ a {
 .symbol {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center; /* Can giua truc ngang */
+    margin-left: 20px;
+    margin-right: 40px;
+    justify-content: space-between;
 }

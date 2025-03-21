@@ -308,8 +308,7 @@ a {
     color: #0689ff;
 }
 
-
-.featuresimage{
+.featuresimage {
     margin-top: 68px;
     width: 1440px;
     max-width: calc(100% - 48px);
@@ -318,7 +317,6 @@ a {
     margin-right: auto;
 }
 
-
 .listfeature {
     display: flex;
     margin-left: auto;
@@ -326,13 +324,11 @@ a {
     justify-content: space-between;
     width: 1110px;
     max-width: calc(100% - 48px);
-    
 }
 .nikko {
     width: 350px;
     height: 357px;
     background: #ffffff;
-
 }
 
 .nikko .text1 {
@@ -367,4 +363,33 @@ a {
     margin-left: 20px;
     margin-right: 40px;
     justify-content: space-between;
+}
+
+/* ========= Neighbourhood======= */
+.a {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    color: #000339;
+}
+
+.b {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a7a7a7;
+}
+
+.house .text1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    color: #000339;
+}
+
+.house .text2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5a6473;
 }

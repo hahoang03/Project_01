@@ -424,7 +424,7 @@ a {
 .featured .link {
     display: flex;
     align-items: center;
-    /* Can giua truc cho ngang */
+    /* Can giua truc cho mui ten va chu ngang */
     font-weight: 600;
     font-size: 1.8rem;
     color: #0689ff;

@@ -396,7 +396,10 @@ a {
 
 /* ======= FEATURED ========== */
 .featured {
-    margin-top: 230px;
+    margin-top: 120px;
+    padding: 110px 0;
+    /* Padding thì nó mới đệm lên được */
+    background: #f5fafe;
 }
 
 .featured .sub-title {
@@ -433,3 +436,81 @@ a {
 .featured .link .arrow {
     margin-left: 8px;
 }
+
+.featured .list {
+    display: flex;
+    gap: 30px;
+    /* Tạo khoảng cách */
+    margin-top: 70px;
+
+    /* Cái này tự thêm cho nó canh đều 2 bên */
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    /* Neu man hinh nho hon 1110 thi se an cai maxwidth 100% va moi ben trai phai can le 24  */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured .item {
+    flex: 1;
+    /* Tổng kích thước thẻ cha sẽ được chia đều cho thẻ con  */
+    background: #ffffff;
+    border-radius: 12px;
+    /* để bo hết cái hình, cho nó đỡ bị trắng */
+}
+
+.featured .item .thumb {
+    width: 100%;
+    /* Cho phần rộng của hình ảnh nganh với độ rộng thẻ */
+    height: 227px;
+    /* Chiều cao ảnh 227, nhưng ảnh sẽ bị méo */
+    object-fit: cover;
+    /* Giữ đúng tỷ lệ ảnh, lấp đầu khung hình */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* Vẫn phải border để chắc ảnh được bo, nếu không nó sẽ bị trồi ra ngoài dù là thẻ con  */
+}
+
+.featured .item .body {
+    padding: 17px 20px 24px;
+    /* Trên 17px, trái phải 20, dưới 24px */
+}
+
+.featured .item .title {
+    font-weight: 600px;
+    font-size: 2rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.featured .item .desc {
+    margin-top: 11px;
+    font-weight: 500px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #a3a6ab;
+}
+
+.featured .item .info {
+    display: flex;
+    align-items: center;
+    /* Phải có display flex rồi mới căn giữa trục ngang dc  */
+    margin-top: 21px;
+}
+
+.featured .item .label {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    color: #4d4d52;
+}
+
+.featured .item .icon {
+    margin-left: 23px;
+}
+
+.featured .item .icon:first-child {
+    margin-left: 0;
+}
+/* Thẻ giả, chọn cái icon đầu tiên */

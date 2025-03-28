@@ -60,6 +60,15 @@ a {
     opacity: 0.9;
 }
 
+.line-clamp {
+    /* Kẹp đường aka nếu quá 2 dòng thì chỉ hiển thị ... */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    /* Nếu không được khai báo thì giá trị mặc định là 2 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* ==================== Header ==================== */
 .header {
     position: relative;
@@ -476,11 +485,13 @@ a {
     /* Trên 17px, trái phải 20, dưới 24px */
 }
 
-.featured .item .title {
+.featured .item .title a {
     font-weight: 600px;
     font-size: 2rem;
-    line-height: 1;
+    line-height: 1.5;
     color: #000339;
+
+    /* Nếu thêm nhiều dòng thì sẽ bị giới hạn lại, 2 dòng rồi sau đó là ... */
 }
 
 .featured .item .desc {
@@ -489,6 +500,8 @@ a {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #a3a6ab;
+    word-break: break-all;
+    /* Bẻ đường link xuống, chứ cái bắt ... ko xi nhê với link */
 }
 
 .featured .item .info {

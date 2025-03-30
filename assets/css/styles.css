@@ -553,9 +553,95 @@ a {
     /* Đo cái nhà với cái đè lên là 520:1048, gần bằng 50%, 2 cục đó chia 1 nửa ra  */
 }
 
-.stats .img-block .img{
+.stats .img-block {
+    position: relative;
+}
+
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+
+.stats-trend {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 239px;
+    padding: 45px 22px 40px;
+    /* Trên 45, trái phải 22, dưới 40 */
+    border-radius: 0px 0px 12px 12px;
+    /* Theo chiều kim đồng hồ, góc trên bên trái, góc trên bên phải, góc dưới bên phải,góc dưới bên trái*/
+    background-color: #FFFFFF;
+}
+
+.stats-trend .value {
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+
+.stats-trend .icon {
+    margin-left: auto;
+    /* Bình thường thì phải thêm display block nữa, tuy nhiên thẻ cha ở đây đẫ là display flex nên ok */
+}
+
+.stats-trend .desc {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+
+.stats-trend .separate {
+    margin-top: 25px;
+    /* Cái này là cái vạch ngăn cách á  */
+    height: 1px;
+    /* Không cần đặt width, nó tự có chiều dài luôn */
+    background:#e9e9e9;
+    
+}
+
+
+
+.stats .row .img-block .image {
+    display: block;
+    margin-left: auto;
+    /* Bị đẩy sang tận cùng bên phải luôn, dùng với display block */
     width: 400px;
     height: 460px;
+    border-radius: 12px;
     object-fit: cover;
-    /* Để không bị méo ảnh */
+    /* Để không bị méo ảnh, fix kich thuoc luon */
+}
+
+.stats .sub-title {
+    position: relative;
+    width: 269px;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color: #000339;
+}
+
+.stats .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    display: block;
+    /* Xet duoc width, hright */
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.stats .info .desc {
+    width: 309px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5a6473;
 }

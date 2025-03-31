@@ -563,14 +563,14 @@ a {
 
 .stats-trend {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 239px;
     padding: 45px 22px 40px;
     /* Trên 45, trái phải 22, dưới 40 */
     border-radius: 0px 0px 12px 12px;
     /* Theo chiều kim đồng hồ, góc trên bên trái, góc trên bên phải, góc dưới bên phải,góc dưới bên trái*/
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .stats-trend .value {
@@ -598,11 +598,46 @@ a {
     /* Cái này là cái vạch ngăn cách á  */
     height: 1px;
     /* Không cần đặt width, nó tự có chiều dài luôn */
-    background:#e9e9e9;
-    
+    background: #e9e9e9;
 }
 
+.stats .avatarblock {
+    display: flex;
+    flex-wrap: wrap;
+    /* Tới ranh giới thì sẽ xuống hàng */
+    gap: 16px;
+    /* Trái phải 16px, trên dứoi 16px */
+    margin-top: 26px;
+}
 
+.stats .avatar-group {
+    display: flex;
+}
+
+.stats .avatar {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+/* Thẻ cha ghi vầy thì thẻ con sẽ căn giữa  */
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -3px;
+    /* Để nó có thể đè 1 phần lên ảnh */
+}
+
+.stats .avatar-1 {
+    background: #1f3bb1;
+    font-weight: 450;
+    font-size: 0.7rem;
+    line-height: 16px;
+    text-align: center;
+
+    /* Line-height bằng với chiều cao của avatar là 16px để căn dọc, text-align căn ngang để center */
+    letter-spacing: -0.2;
+    color: #FFFFFF;
+}
 
 .stats .row .img-block .image {
     display: block;

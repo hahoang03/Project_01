@@ -618,7 +618,7 @@ a {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-/* Thẻ cha ghi vầy thì thẻ con sẽ căn giữa  */
+    /* Thẻ cha ghi vầy thì thẻ con sẽ căn giữa  */
     width: 16px;
     height: 16px;
     object-fit: cover;
@@ -636,7 +636,7 @@ a {
 
     /* Line-height bằng với chiều cao của avatar là 16px để căn dọc, text-align căn ngang để center */
     letter-spacing: -0.2;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .stats .row .img-block .image {
@@ -679,4 +679,56 @@ a {
     font-size: 16px;
     line-height: 30px;
     color: #5a6473;
+}
+
+/* Subscription */
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+}
+
+.subscription .info {
+    width: 671px;
+    /* Gioi han lai de khong xuyen qua anh */
+    max-width: 100%;
+    /* Reponsive */
+    padding: 0 80px;
+    /* Tren duoi 0, trai phai 80  */
+}
+
+.subscription .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.subscription .desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.subscription .btn {
+    margin-top: 20px;
+    min-width: 151px;
+    background: #ffff;
+    color: #002366;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
 }

@@ -70,8 +70,19 @@ a {
 }
 
 /* ==================== Header ==================== */
-.header {
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    /* Để cuộn thấy */
+}
+
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -80,7 +91,12 @@ a {
     /* nam ngang thi su dung flex, chinh cho nam giua theo chieu doc */
     display: flex;
     align-items: center;
-    padding-top: 48px;
+    /* padding-top: 48px; */
+
+    padding: 12px 0;
+    
+
+
     /* neu su dung margin thi se day nguyen cai mau nen luon */
 }
 
